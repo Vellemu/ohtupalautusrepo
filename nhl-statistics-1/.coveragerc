@@ -1,0 +1,13 @@
+[run]
+source = src/statistics_service  # Rajaa lähdekoodi statistics_service.py -tiedostoon
+
+[report]
+omit =
+    src/index.py
+    src/player_reader.py
+    src/player.py
+show_missing = True  # Näyttää puuttuvat rivit tekstiraportissa
+skip_covered = True  # Ohittaa tiedostot, joissa kaikki rivit on katettu
+
+[html]
+directory = htmlcov  # Asettaa HTML-raportin hakemistoksi 'htmlcov'
